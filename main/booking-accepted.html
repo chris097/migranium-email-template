@@ -81,21 +81,25 @@
         text-decoration: underline;
         color: #2969FF;
     }
-.check{
-        font-size: 16px; 
-        font-weight: bold; 
+
+    .check {
+        font-size: 16px;
+        font-weight: bold;
     }
-    .check-good{
+
+    .check-good {
         width: 22px;
         height: 22px;
     }
-    .check-list{
-        font-size: 14px; 
-        font-weight: 500; 
+
+    .check-list {
+        font-size: 14px;
+        font-weight: 500;
         line-height: 1.5;
-         width: 550px; 
+        width: 550px;
         margin-top: 10px;
     }
+
     .banner {
         width: 100%;
         height: 151.25px;
@@ -116,13 +120,23 @@
         font-weight: bold;
         font-weight: 'Manrope' sans-serif;
         cursor: pointer;
-        margin-top: 40px;
+        margin-top: 15px;
     }
 
     .button:hover {
         background-color: #014a7b;
     }
-
+    .heading{
+        font-size: 12px; 
+        font-weight: 400; 
+        line-height: 1.5;
+    }
+    .is-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        max-width: 600px;
+    }
     .footer {
         font-size: 14px;
         font-weight: 'Manrope' sans-serif;
@@ -141,13 +155,21 @@
             width: 100%;
             font-size: 12px;
         }
-
+.description{
+        font-size: 15px; 
+        font-weight: 400;
+         margin-top: 4px;
+    }
         .check-good {
             width: 14px;
             height: 14px;
             margin-top: 3px;
         }
-
+        .is-grid{
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin-top: 10px;
+        }
         .title {
             font-size: 16px;
         }
@@ -175,61 +197,90 @@
             <img class="banner" src="../main/assets/email-banner.png" />
             <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Hi [Booker Name],</h1>
             <p class="welcome-note">
-                We've successfully received your booking request for [Space Name] at [Business Name]. Your request is now pending
-                approval.
+                Great news! Your booking request for [Space Name] at [Location Name] has been accepted.
             </p>
             <div>
                 <div>
-                    <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Booking Request Details:</h2>
+                    <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Confirmed Booking Details:</h2>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="../main/assets/space.png" alt="">
+                    <img class="check-good" src="../main/assets/team.png" alt="">
                     <div>
                         <div class="heading">
-                            Space Name
+                            Meeting Name
                         </div>
-                        <div class="description" style="margin-top: 5px;">[Space Name]</div>
+                        <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="../main/assets/location.png" alt="">
-                    <div>
-                        <div class="heading">
-                            Space Location
+                <div class="is-grid">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/space.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Space Name
+                            </div>
+                            <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
                         </div>
-                        <div class="description" style="margin-top: 5px;">[Space Address]</div>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/location.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Space Location
+                            </div>
+                            <div class="description" style="margin-top: 5px;">Floor 2</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/office.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Location Name
+                            </div>
+                            <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/location.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Location Address
+                            </div>
+                            <div class="description" style="margin-top: 5px;">Floor 2</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/date.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Date
+                            </div>
+                            <div class="description" style="margin-top: 5px;">12 May 2024</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/time.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Time
+                            </div>
+                            <div class="description" style="margin-top: 5px;">2:00 PM - 4:00 PM</div>
+                        </div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="../main/assets/date.png" alt="">
-                    <div>
-                        <div class="heading">
-                            Date
-                        </div>
-                        <div class="description" style="margin-top: 5px;">DD Month YYYY</div>
-                    </div>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="../main/assets/time.png" alt="">
-                    <div>
-                        <div class="heading">
-                            Time
-                        </div>
-                        <div class="description" style="margin-top: 5px;">00 : 00 PM</div>
-                    </div>
-                </div>
-                <p class="thanks">We'll notify you as soon as your booking request has been reviewed. The venue provider may accept or decline your
-                request based on availability or other considerations.</p>
-                <div class="thanks" style="margin-top: 40px;">Best regards,</div>
-                <div class="thanks" style="margin-top: 3px;">The Migranium Team
-                </div>
+                <p class="thanks">If you wish to cancel or amend your booking, click below.</p>
                 <!-- get started button -->
-                <button class="button">View Account</button>
+                <button class="button">Create New Booking</button>
+                <p class="thanks">Look out for a reminder email with all your event details and any additional information you might need closer to the
+                date of your event.</p>
                 <p class="support">
                     <b>Need assistance?</b> Our support team is here to help you every step of the way. You can reach us
                     anytime at
                     <span>support@migranium.com.</span>
                 </p>
+                <div class="thanks" style="margin-top: 40px;">Best regards,</div>
+                <div class="thanks" style="margin-top: 3px;">The Migranium Team
+                </div>
             </div>
         </div>
         <div style="margin-top: 100px;">
@@ -242,6 +293,6 @@
             <div style="font-size: 12px; font-weight: 'Manrope' sans-serif;">© 2023 Migranium Platforms Inc</div>
         </div>
     </div>
-</body>
+    </body>
 
 </html>

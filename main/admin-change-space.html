@@ -45,7 +45,7 @@
     }
 
     .thanks {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 1.5;
         margin-top: 10px;
@@ -54,28 +54,52 @@
     .support {
         margin-top: 10px;
         font-size: 14px;
+        line-height: 1.5;
         font-family: 'Inter', sans-serif;
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    .check{
-        font-size: 16px; 
-        font-weight: bold; 
+
+    .check {
+        font-size: 16px;
+        font-weight: bold;
     }
-    .check-good{
+
+    .check-good {
         width: 14px;
         height: 14px;
         margin-top: 3px;
     }
-    .check-list{
-        font-size: 14px; 
-        font-weight: 400; 
+
+    .check-list {
+        font-size: 14px;
+        font-weight: 400;
         line-height: 1.5;
-         width: 500px; 
+        width: 500px;
         margin-top: 10px;
     }
+
     .support>span {
         text-decoration: underline;
-        color: #2969FF;
+        color: #005893;
+        font-weight: 600;
+    }
+
+    .check {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .check-good {
+        width: 22px;
+        height: 22px;
+    }
+
+    .check-list {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        width: 550px;
+        margin-top: 10px;
     }
 
     .banner {
@@ -98,11 +122,24 @@
         font-weight: bold;
         font-weight: 'Manrope' sans-serif;
         cursor: pointer;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .button:hover {
         background-color: #014a7b;
+    }
+
+    .heading {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .is-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        max-width: 600px;
     }
 
     .footer {
@@ -118,15 +155,30 @@
         .welcome-note {
             font-size: 14px;
         }
-        .check-list{
+
+        .check-list {
             width: 100%;
             font-size: 12px;
         }
-        .check-good{
-        width: 14px;
-        height: 14px;
-        margin-top: 3px;
-    }   
+
+        .description {
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        .check-good {
+            width: 14px;
+            height: 14px;
+            margin-top: 3px;
+        }
+
+        .is-grid {
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin-top: 10px;
+        }
+
         .title {
             font-size: 16px;
         }
@@ -145,83 +197,67 @@
     }
 </style>
 
-<body>
+<bod>
     <div style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
             <div style="display: flex; justify-content: flex-end;">
                 <img class="logo" src="../main/assets/migranium-logo.png" />
             </div>
-            <img style="width: 100%; height: 151.25px; margin-top: 30px;" src="../main/assets/email-banner.png" />
-            <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Welcome! 🥳,</h1>
+            <img class="banner" src="../main/assets/email-banner.png" />
+            <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Hi,</h1>
             <p class="welcome-note">
-                We are excited to invite you to join [Organization Name] on Migranium Spaces 🎉.  This position allows you to book
-                premium spaces for various events and gives you the capability to manage user permissions within your organization.
+                We are reaching out to inform you that there has been a change to your booking. Originally, you booked [Original Space
+                Name/Location] on [Date]. Due to [Reason for Change], we have arranged an alternative Space for you.
             </p>
             <div>
                 <div>
-                    <h2 class="title">Your Exclusive Super User Privileges:</h2>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
-                    <img class="check-good" src="../main/assets/Checkbox.png" alt="">
-                    <div>
-                        <div class="check">Booking Access</div>
-                        <div class="check-list">
-                            Reserve any of our exclusive spaces for meetings, seminars, and special events.
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 40px;">
-                    <img class="check-good" src="../main/assets/Checkbox.png" alt="">
-                    <div>
-                        <div class="check">User Management</div>
-                        <div class="check-list">
-                            Add members to your organization's account, granting them the ability to book spaces as needed.
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="title">Get Started in Three Simple Steps:</h2>
+                    <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Updated Details:</h2>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 18px; height: 18px;" src="../main/assets/one.png" alt="">
+                    <img class="check-good" src="../main/assets/team.png" alt="">
                     <div>
-                        <div style="font-size: 16px; font-weight: bold;">Log In to Your Dashboard</div>
-                        <div style="font-size: 12px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Use your email to <span style="text-decoration: underline;">log in here</span> and access your Super User dashboard.
+                        <div class="heading">
+                            Meeting Name
+                        </div>
+                        <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
+                    </div>
+                </div>
+                <div class="is-grid">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/event.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Updated Space Name
+                            </div>
+                            <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img class="check-good" src="../main/assets/contact.png" alt="">
+                        <div>
+                            <div class="heading">
+                                Updated Space Location
+                            </div>
+                            <div class="description" style="margin-top: 5px;">Floor 2</div>
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 18px; height: 18px;" src="../main/assets/two.png" alt="">
-                    <div>
-                        <div style="font-size: 16px; font-weight: bold;">Add Team Members</div>
-                        <div style="font-size: 12px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Easily <span style="text-decoration: underline;">add users here</span>, enabling them to make bookings and manage details.
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 18px; height: 18px;" src="../main/assets/3.png" alt="">
-                    <div>
-                        <div style="font-size: 16px; font-weight: bold;">Explore Spaces</div>
-                        <div style="font-size: 12px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Dive into our hand-picked selection of spaces and start planning unforgettable events.
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <p class="thanks">Should you require any assistance or have any questions, please feel free to reach out to your dedicated account
-                manager, [Test_Customer's Name] ([Test_Customer's Email], or contact us at <span style="text-decoration: underline;">support@migranium.com</span>.</p>
-                <div class="thanks" style="margin-top: 30px;">Warm regards,</div>
+                <!-- <h2 class="title">Need to Change Your Plans?</h2> -->
+                <p class="thanks">We understand this may cause some inconvenience and are committed to ensuring a smooth
+                    transition. Please feel free to
+                    contact us at [Provider Contact Information] if you have any questions or require further
+                    assistance.</p>
+                <div class="thanks" style="margin-top: 40px;">Thank you for your understanding.</div>
+                <div class="thanks" style="margin-top: 15px;">Best regards,</div>
                 <div class="thanks" style="margin-top: 3px;">The Migranium Team
                 </div>
                 <!-- get started button -->
-                <button class="button">View Account</button>
-                <p class="support">
-                    <b>Need assistance?</b> Our support team is here to help you every step of the way. You can reach us
-                    anytime at
-                    <span>support@migranium.com.</span>
+                <button class="button">RSVP</button>
+                <p class="support" style="margin-top: 15px;"><b>Need assistance?</b> If you have any questions or need further assistance, please reach out to your dedicated account manager,
+                [Test_Customer's Name] ([Test_Customer's Email]).
                 </p>
+                <p class="support" style="font-weight: 500;">You can also contact Migranium Spaces directly at support@migranium.com. Our support team is here to help you every step
+                of the way.</p>
             </div>
         </div>
         <div style="margin-top: 100px;">
@@ -234,6 +270,6 @@
             <div style="font-size: 12px; font-weight: 'Manrope' sans-serif;">© 2023 Migranium Platforms Inc</div>
         </div>
     </div>
-</body>
+    </body>
 
 </html>
