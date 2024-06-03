@@ -16,83 +16,173 @@
     <title>Onboarding</title>
 </head>
 
-<body
-    style="max-width: 1000px; margin: 0 auto; padding: 20px; font-family: 'Helvetica Neue', sans-serif; color: #121A26;">
+<style>
+     body{
+        max-width: 1000px;
+         margin: 0 auto; 
+         padding: 20px; 
+         font-family: 'Helvetica Neue', 
+         sans-serif; 
+         color: #121A26;    
+    }
+    .logo{
+        width: 20%;
+    }
+    .banner{
+        width: 100%; 
+        height: 151.25px; 
+        margin-top: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: fill;
+    }
+    .title{
+        margin-top: 30px; 
+        font-weight: bold; 
+        font-size: 18px;
+    }
+    .is-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        max-width: 600px;
+    }
+    .support{
+        margin-top: 10px; 
+        font-size: 14px; 
+        font-family: 'Inter', sans-serif; 
+        margin-top: 20px;
+    } 
+    .support > span{
+        text-decoration: underline;
+        color: #2969FF;
+    }
+    .button{
+        background-color: #005893; 
+        padding: 20px; 
+        color: #fff; 
+        width: 100%; 
+        border: none; 
+        font-size: 16px; 
+        font-weight: bold; 
+        font-weight: 'Manrope' sans-serif; 
+        cursor: pointer; 
+        margin-top: 40px;
+    }
+    .button:hover{
+       background-color: #014a7b;  
+    }
+    .footer{
+        font-size: 14px; 
+        font-weight: 'Manrope' sans-serif;
+    }
+     @media (max-width: 600px){
+        .logo{
+            width: 30%;
+        }
+        .welcome-note{
+            font-size: 14px;
+        }
+         .support{
+            font-size: 12px;
+        }
+        .is-grid{
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .title{
+            font-size: 16px;
+        }
+        .footer{
+            font-size: 12px;
+        }
+     }
+</style>
+
+<body>
     <div style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
             <div style="display: flex; justify-content: flex-end;">
-                <img style="width: 20%;" src="../main/assets/migranium-logo.png" />
+                <img class="logo" src="../main/assets/migranium-logo.png" />
             </div>
-            <img style="width: 100%; height: 151.25px; margin-top: 30px;" src="../main/assets/email-banner.png" />
+            <img class="banner" src="../main/assets/email-banner.png" />
             <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Hi,</h1>
-            <p style="font-weight:400; font-size: 16px; letter-spacing: 0.2; line-height: 1.5; margin-top: 20px;">
+            <p class="wecome-note">
             [Room Name] has been booked for an upcoming event at [Location Name].
             </p>
             <div>
                 <div>
-                    <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Below are the details of the booking:</h2>
+                    <h2 class="title">Below are the details of the booking:</h2>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 28px; height: 28px;" src="../main/assets/list.png" alt="">
-                    <div>
-                        <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Space Name</div>
-                        <div
-                            style="font-size: 15px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Bohemian Woodwork
+                <div class="is-grid">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img style="width: 28px; height: 28px;" src="../main/assets/wood-work.png" alt="">
+                        <div>
+                            <div style="font-size: 12px;">Space Name</div>
+                            <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
+                                Bohemian Woodwork
                             </div>
+                        </div>
                     </div>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 28px; height: 28px;" src="../main/assets/list.png" alt="">
-                    <div>
-                        <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Space Name</div>
-                        <div
-                            style="font-size: 15px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Bohemian Woodwork
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img style="width: 28px; height: 28px;" src="../main/assets/location.png" alt="">
+                        <div>
+                            <div style="font-size: 12px;">Space Location</div>
+                            <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
+                                Floor 2
                             </div>
+                        </div>
                     </div>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 28px; height: 28px;" src="../main/assets/list.png" alt="">
-                    <div>
-                        <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Space Name</div>
-                        <div
-                            style="font-size: 15px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Bohemian Woodwork
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img style="width: 28px; height: 28px;" src="../main/assets/date.png" alt="">
+                        <div>
+                            <div style="font-size: 12px;">Date</div>
+                            <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
+                                12 May 2024
                             </div>
+                        </div>
                     </div>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 28px; height: 28px;" src="../main/assets/list.png" alt="">
-                    <div>
-                        <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Space Name</div>
-                        <div
-                            style="font-size: 15px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Bohemian Woodwork
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img style="width: 28px; height: 28px;" src="../main/assets/time.png" alt="">
+                        <div>
+                            <div style="font-size: 12px;">Time</div>
+                            <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
+                                2:00 PM - 4:00 PM
                             </div>
+                        </div>
                     </div>
-                </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img style="width: 28px; height: 28px;" src="../main/assets/list.png" alt="">
-                    <div>
-                        <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Space Name</div>
-                        <div
-                            style="font-size: 15px; font-weight: 400; line-height: 1.5; margin-top: 5px;">
-                            Bohemian Woodwork
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img style="width: 28px; height: 28px;" src="../main/assets/event.png" alt="">
+                        <div>
+                            <div style="font-size: 12px;">Event Organizer</div>
+                            <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
+                                Tope Ukaegbu
                             </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
+                        <img style="width: 28px; height: 28px;" src="../main/assets/contact.png" alt="">
+                        <div>
+                            <div style="font-size: 12px;">Contact Information</div>
+                            <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
+                                + 1 519 476 9900
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- get started button -->
                 <button
-                    style="background-color: #005893; padding: 20px; color: #fff; width: 100%; border: none; font-size: 16px; font-weight: bold; font-weight: 'Manrope' sans-serif; cursor: pointer; margin-top: 20px;">View Booking Details</button>
-                <p style="margin-top: 10px; font-size: 14px; font-family: 'Inter', sans-serif; margin-top: 20px;">
+                    class="button">View Booking Details</button>
+                <p class="support">
                     <b>Need assistance?</b> Our support team is here to help you every step of the way. You can reach us
                     anytime at
-                    <span style="text-decoration: underline; color: #005893; font-weight: bold;">support@migranium.com.</span> Expect a prompt response within 24 hours!</p>
+                    <span>support@migranium.com.</span></p>
             </div>
         </div>
         <div style="margin-top: 100px;">
-            <p style="font-size: 14px; font-weight: 'Manrope' sans-serif;">This email was sent to <span
+            <p class="footer">This email was sent to <span
                     style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
                 receive this kind of email, Don’t want any more emails
                 from Migranium? <br /> <span style="text-decoration: underline; color: #2969FF;">Unsubscribe.</span></p>
