@@ -20,7 +20,7 @@
     body {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 20px;
         font-family: 'Helvetica Neue',
             sans-serif;
         color: #121A26;
@@ -45,7 +45,7 @@
     }
 
     .thanks {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         margin-top: 10px;
@@ -54,9 +54,8 @@
     .support {
         margin-top: 10px;
         font-size: 14px;
-        line-height: 1.5;
         font-family: 'Inter', sans-serif;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .check {
@@ -80,8 +79,7 @@
 
     .support>span {
         text-decoration: underline;
-        color: #005893;
-        font-weight: 600;
+        color: #2969FF;
     }
 
     .check {
@@ -122,7 +120,7 @@
         font-weight: bold;
         font-weight: 'Manrope' sans-serif;
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .button:hover {
@@ -147,7 +145,32 @@
         font-weight: 'Manrope' sans-serif;
     }
 
+    .icon-container {
+        width: 22px;
+        height: 22px;
+        background-color: #E8F3FB;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 22px;
+        min-height: 22px;
+        box-sizing: border-box;
+        margin-top: 1.5px;
+    }
+
+    .icon-size {
+        width: 14px;
+        height: 14px;
+    }
+
     @media (max-width: 600px) {
+        body {
+            max-width: 100%;
+            padding: 0 20px;
+            margin: -10px auto;
+        }
+
         .logo {
             width: 40%;
         }
@@ -194,8 +217,17 @@
         .footer {
             font-size: 12px;
         }
-        .banner{
+
+        .banner {
             height: 115px;
+            margin: 20px auto;
+        }
+
+        .icon-container {
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+            min-height: 22px;
         }
     }
 </style>
@@ -216,8 +248,12 @@
                 <div>
                     <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Cancelled Booking Details:</h2>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/s6bwfb0yyrnfs6klhkgl" alt="">
+                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                    <div class="icon-container">
+                        <img class="icon-size" style="width: 14px; height: 10px;"
+                            src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/uviguvqtnbw7fzlo2kiu"
+                            alt="">
+                    </div>
                     <div>
                         <div class="heading">
                             Meeting Name
@@ -226,8 +262,12 @@
                     </div>
                 </div>
                 <div class="is-grid">
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/glxewijpxvdofshmnfun" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/aw7u7hanekcldo5cdh0k"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Space Name
@@ -235,8 +275,12 @@
                             <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ydqfenlxxewywo90bicp" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 10px; height: 12px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/q9ffbgt8twt7pudxfqep"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Space Location
@@ -244,17 +288,25 @@
                             <div class="description" style="margin-top: 5px;">Floor 2</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/wgvar4kotnh9grnfclx2" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 11px; height: 11px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/wpdnxwwic9hsdk6kgigq"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
-                                Loaction Name
+                                Location Name
                             </div>
                             <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ydqfenlxxewywo90bicp" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 10px; height: 12px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/q9ffbgt8twt7pudxfqep"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Location Address
@@ -262,8 +314,12 @@
                             <div class="description" style="margin-top: 5px;">Floor 2</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ktlqo8xnzzwzdyqw7ar4" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 11px; height: 11px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/qptxn1tihtmf1ewefd0c"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Date
@@ -271,8 +327,12 @@
                             <div class="description" style="margin-top: 5px;">12 May 2024</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/sqxtody4wi1wkqhgbsvd" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 12px; height: 12px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/laospm49udochrtpxlzj"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Time
@@ -280,8 +340,12 @@
                             <div class="description" style="margin-top: 5px;">2:00 PM - 4:00 PM</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/mhl18tczrzyoeuechn5c" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 11px; height: 11px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/y4ulu3qgyweq2uim0scb"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Event Organizer
@@ -289,8 +353,12 @@
                             <div class="description" style="margin-top: 5px;">Tope Ukaegbu</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/xmawmqwi9s7dopsrp2wr" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 11px; height: 11px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/dy0tc0kwvzctlqgoe4ic"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Contact Information
@@ -316,7 +384,7 @@
                 </p>
             </div>
         </div>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px; margin-bottom: 20px;">
             <p class="footer">This email was sent to <span
                     style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
                 receive this kind of email, Don’t want any more emails

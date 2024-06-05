@@ -20,7 +20,7 @@
     body {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 20px;
         font-family: 'Helvetica Neue',
             sans-serif;
         color: #121A26;
@@ -43,7 +43,16 @@
         font-weight: bold;
         font-size: 18px;
     }
-
+.heading {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .description {
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 3px;
+        }
     .thanks {
         font-size: 16px;
         font-weight: 400;
@@ -127,8 +136,30 @@
         font-size: 14px;
         font-weight: 'Manrope' sans-serif;
     }
+    .icon-container {
+    width: 22px;
+    height: 22px;
+    background-color: #E8F3FB;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 22px;
+    min-height: 22px;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+.icon-size {
+    width: 14px;
+    height: 14px;
+}
 
     @media (max-width: 600px) {
+        body{
+            max-width: 100%;
+            padding: 0 20px;
+            margin: -10px auto;
+        }
         .logo {
             width: 40%;
         }
@@ -149,6 +180,7 @@
         }
         .banner{
             height: 115px;
+            margin: 20px auto;
         }
         .title {
             font-size: 16px;
@@ -164,6 +196,12 @@
 
         .footer {
             font-size: 12px;
+        }
+        .icon-container {
+        width: 22px;
+        height: 22px; 
+        min-width: 22px;
+        min-height: 22px;
         }
     }
 </style>
@@ -184,8 +222,11 @@
                 <div>
                     <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Booking Request Details:</h2>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/glxewijpxvdofshmnfun" alt="">
+                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                    <div class="icon-container">
+                        <img class="icon-size" 
+                            src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/aw7u7hanekcldo5cdh0k" alt="">
+                    </div>
                     <div>
                         <div class="heading">
                             Space Name
@@ -193,8 +234,11 @@
                         <div class="description" style="margin-top: 5px;">[Space Name]</div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ydqfenlxxewywo90bicp" alt="">
+                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                    <div class="icon-container">
+                        <img class="icon-size" style="width: 10px; height: 12px;"
+                            src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/q9ffbgt8twt7pudxfqep" alt="">
+                    </div>
                     <div>
                         <div class="heading">
                             Space Location
@@ -202,8 +246,11 @@
                         <div class="description" style="margin-top: 5px;">[Space Address]</div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ktlqo8xnzzwzdyqw7ar4" alt="">
+                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                    <div class="icon-container">
+                        <img class="icon-size"
+                            src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/aw7u7hanekcldo5cdh0k" alt="">
+                    </div>
                     <div>
                         <div class="heading">
                             Date
@@ -211,8 +258,11 @@
                         <div class="description" style="margin-top: 5px;">DD Month YYYY</div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/sqxtody4wi1wkqhgbsvd" alt="">
+                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                    <div class="icon-container">
+                        <img class="icon-size" style="width: 12px; height: 12px;"
+                            src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/laospm49udochrtpxlzj" alt="">
+                    </div>
                     <div>
                         <div class="heading">
                             Time
@@ -234,7 +284,7 @@
                 </p>
             </div>
         </div>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px; margin-bottom: 20px;">
             <p class="footer">This email was sent to <span
                     style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
                 receive this kind of email, Don’t want any more emails

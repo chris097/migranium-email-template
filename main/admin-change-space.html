@@ -20,14 +20,16 @@
     body {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 20px;
         font-family: 'Helvetica Neue',
             sans-serif;
         color: #121A26;
     }
+
     .logo {
         width: 30%;
     }
+
     .welcome-note {
         font-weight: 400;
         font-size: 16px;
@@ -35,33 +37,38 @@
         line-height: 1.5;
         margin-top: 20px;
     }
+
     .title {
         margin-top: 30px;
         font-weight: bold;
         font-size: 18px;
     }
+
     .thanks {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         margin-top: 10px;
     }
+
     .support {
         margin-top: 10px;
         font-size: 14px;
-        line-height: 1.5;
         font-family: 'Inter', sans-serif;
-        margin-top: 30px;
+        margin-top: 20px;
     }
+
     .check {
         font-size: 16px;
         font-weight: bold;
     }
+
     .check-good {
         width: 14px;
         height: 14px;
         margin-top: 3px;
     }
+
     .check-list {
         font-size: 14px;
         font-weight: 400;
@@ -69,19 +76,22 @@
         width: 500px;
         margin-top: 10px;
     }
+
     .support>span {
         text-decoration: underline;
-        color: #005893;
-        font-weight: 600;
+        color: #2969FF;
     }
+
     .check {
         font-size: 16px;
         font-weight: bold;
     }
+
     .check-good {
         width: 22px;
         height: 22px;
     }
+
     .check-list {
         font-size: 14px;
         font-weight: 500;
@@ -89,23 +99,17 @@
         width: 550px;
         margin-top: 10px;
     }
+
     .banner {
-    width: 100%;
+        width: 100%;
         height: 151.25px;
         margin-top: 30px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         object-fit: fill;
-}
+    }
 
-.banner > img {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: fill;
-    background-size: auto;
-    overflow: hidden;
-}
     .button {
         background-color: #005893;
         padding: 20px;
@@ -116,31 +120,57 @@
         font-weight: bold;
         font-weight: 'Manrope' sans-serif;
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 15px;
     }
+
     .button:hover {
         background-color: #014a7b;
     }
+
     .heading {
         font-size: 12px;
         font-weight: 400;
         line-height: 1.5;
     }
+
     .is-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 20px;
         max-width: 600px;
     }
+
     .footer {
         font-size: 14px;
         font-weight: 'Manrope' sans-serif;
     }
 
+    .icon-container {
+        width: 22px;
+        height: 22px;
+        background-color: #E8F3FB;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 22px;
+        min-height: 22px;
+        box-sizing: border-box;
+        margin-top: 1.5px;
+    }
+
+    .icon-size {
+        width: 14px;
+        height: 14px;
+    }
+
     @media (max-width: 600px) {
-        body{
+        body {
             max-width: 100%;
+            padding: 0 20px;
+            margin: -10px auto;
         }
+
         .logo {
             width: 40%;
         }
@@ -148,9 +178,7 @@
         .welcome-note {
             font-size: 14px;
         }
-        .banner{
-            height: 115px;
-        }
+
         .check-list {
             width: 100%;
             font-size: 12px;
@@ -189,6 +217,18 @@
         .footer {
             font-size: 12px;
         }
+
+        .banner {
+            height: 115px;
+            margin: 20px auto;
+        }
+
+        .icon-container {
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+            min-height: 22px;
+        }
     }
 </style>
 
@@ -208,8 +248,12 @@
                 <div>
                     <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Updated Details:</h2>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/hpqfnazb7muh4dis3bjs" alt="">
+                <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                    <div class="icon-container">
+                        <img class="icon-size" style="width: 14px; height: 10px;"
+                            src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/uviguvqtnbw7fzlo2kiu"
+                            alt="">
+                    </div>
                     <div>
                         <div class="heading">
                             Meeting Name
@@ -218,8 +262,12 @@
                     </div>
                 </div>
                 <!-- <div class="is-grid"> -->
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/glxewijpxvdofshmnfun" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/aw7u7hanekcldo5cdh0k"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Updated Space Name
@@ -228,7 +276,11 @@
                         </div>
                     </div>
                     <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ydqfenlxxewywo90bicp" alt="">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 10px; height: 12px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/q9ffbgt8twt7pudxfqep"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Updated Space Location
@@ -255,7 +307,7 @@
                 of the way.</p>
             </div>
         </div>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px; margin-bottom: 20px;">
             <p class="footer">This email was sent to <span
                     style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
                 receive this kind of email, Don’t want any more emails

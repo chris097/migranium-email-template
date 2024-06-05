@@ -20,7 +20,7 @@
     body {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 20px;
         font-family: 'Helvetica Neue',
             sans-serif;
         color: #121A26;
@@ -55,7 +55,7 @@
         margin-top: 10px;
         font-size: 14px;
         font-family: 'Inter', sans-serif;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .check {
@@ -120,7 +120,7 @@
         font-weight: bold;
         font-weight: 'Manrope' sans-serif;
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .button:hover {
@@ -145,7 +145,32 @@
         font-weight: 'Manrope' sans-serif;
     }
 
+    .icon-container {
+        width: 22px;
+        height: 22px;
+        background-color: #E8F3FB;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 22px;
+        min-height: 22px;
+        box-sizing: border-box;
+        margin-top: 1.5px;
+    }
+
+    .icon-size {
+        width: 14px;
+        height: 14px;
+    }
+
     @media (max-width: 600px) {
+        body {
+            max-width: 100%;
+            padding: 0 20px;
+            margin: -10px auto;
+        }
+
         .logo {
             width: 40%;
         }
@@ -192,8 +217,17 @@
         .footer {
             font-size: 12px;
         }
-        .banner{
+
+        .banner {
             height: 115px;
+            margin: 20px auto;
+        }
+
+        .icon-container {
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+            min-height: 22px;
         }
     }
 </style>
@@ -215,8 +249,12 @@
                     <h2 style="margin-top: 30px; font-weight: bold; font-size: 18px;">Cancelled Booking Details:</h2>
                 </div>
                 <div class="is-grid">
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/glxewijpxvdofshmnfun" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/aw7u7hanekcldo5cdh0k"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Space Name
@@ -224,17 +262,25 @@
                             <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ydqfenlxxewywo90bicp" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 11px; height: 11px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/wpdnxwwic9hsdk6kgigq"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
-                                Space Location
+                                Location Name
                             </div>
-                            <div class="description" style="margin-top: 5px;">Floor 2</div>
+                            <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ktlqo8xnzzwzdyqw7ar4" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 11px; height: 11px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/qptxn1tihtmf1ewefd0c"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Date
@@ -242,8 +288,12 @@
                             <div class="description" style="margin-top: 5px;">12 May 2024</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start;">
-                        <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/sqxtody4wi1wkqhgbsvd" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 12px; height: 12px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/laospm49udochrtpxlzj"
+                                alt="">
+                        </div>
                         <div>
                             <div class="heading">
                                 Time
@@ -252,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="thanks" style="margin-top: 40px;">We understand that plans can change, and we hope to assist you with any future bookings.</p>
+                <p class="thanks" style="margin-top: 20px;">We understand that plans can change, and we hope to assist you with any future bookings.</p>
                 <h2 class="title">Still need a booking?</h2>
                 <p class="thanks">If you would like to reschedule your booking or choose an alternative venue, please click the button below.</p>
                
@@ -267,7 +317,7 @@
                 </div>
             </div>
         </div>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px; margin-bottom: 20px;">
             <p class="footer">This email was sent to <span
                     style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
                 receive this kind of email, Don’t want any more emails

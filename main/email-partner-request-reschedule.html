@@ -20,7 +20,7 @@
     body {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 20px;
         font-family: 'Helvetica Neue',
             sans-serif;
         color: #121A26;
@@ -148,6 +148,11 @@
     }
 
     @media (max-width: 600px) {
+         body {
+            max-width: 100%;
+            padding: 0 20px;
+            margin: -10px auto;
+        }
         .logo {
             width: 40%;
         }
@@ -196,6 +201,7 @@
         }
         .banner{
             height: 115px;
+            margin: 20px auto;
         }
     }
 </style>
@@ -228,7 +234,7 @@
                 of the way.</p>
             </div>
         </div>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px; margin-bottom: 20px;">
             <p class="footer">This email was sent to <span
                     style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
                 receive this kind of email, Don’t want any more emails
