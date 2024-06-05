@@ -18,7 +18,7 @@
     body{
         max-width: 1000px;
          margin: 0 auto; 
-         padding: 20px; 
+         padding: 0 20px; 
          font-family: 'Helvetica Neue', 
          sans-serif; 
          color: #121A26;    
@@ -91,7 +91,29 @@
         font-size: 14px; 
         font-weight: 'Manrope' sans-serif;
     }
+    .icon-container {
+    width: 22px;
+    height: 22px;
+    background-color: #E8F3FB;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 22px;
+    min-height: 22px;
+    box-sizing: border-box;
+    margin-top: 1.5px;
+}
+.icon-size {
+    width: 14px;
+    height: 14px;
+}
     @media (max-width: 600px) {
+        body{
+            max-width: 100%;
+            padding: 0 20px;
+            margin: -10px auto;
+        }
         .logo{
             width: 40%;
         }
@@ -101,8 +123,12 @@
         .title{
             font-size: 16px;
         }
+        .banner{
+            height: 115px;
+            margin: 20px auto;
+        }
         .description{
-            font-size: 12px;
+            font-size: 14px;
             width: 100%;
         }
         .description > span{
@@ -117,6 +143,12 @@
         .footer{
             font-size: 12px;
         }
+        .icon-container {
+        width: 22px; /* Ensure the width remains the same */
+        height: 22px; /* Ensure the height remains the same */
+        min-width: 22px;
+        min-height: 22px;
+    }
     }
 </style>
 <body>
@@ -125,44 +157,52 @@
             <div style="display: flex; justify-content: flex-end;">
                 <img class="logo" src="https://cdn.animaapp.com/projects/665a1a92a3299305d24c7340/releases/665a20bd9735d5f22a18cd7e/img/frame-1261154181@2x.png" />
             </div>
-                <img class="banner" src="https://cdn.animaapp.com/projects/665a1a92a3299305d24c7340/releases/665a1c870e8561285e7db8a4/img/mask-group-2.png" />
+                <img class="banner" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/db3ikvrhgxmeisiclycf" />
                 <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Welcome! 🥳</h1>
                 <p class="welcome-note">We&apos;re excited to welcome you to Migranium&apos;s Spaces, a vibrant community dedicated to space-sharing. Thank you for
                 choosing us to help bring your space to life!</p>
                 <div>
                    <div><h2 class="title">Getting started is simple:</h2></div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                            <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/glxewijpxvdofshmnfun" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/aw7u7hanekcldo5cdh0k" alt="">
+                        </div>
                         <div>
-                            <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">List Your Space</div>
+                            <div style="font-size: 16px; font-weight: bold;">List Your Space</div>
                             <div class="description">Jump straight into our easy-to-follow guide to list your space and amenities. Make your listings attractive and
                             discoverable to potential bookers. <span>Start Listing Your Space</span></div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                            <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/hpqfnazb7muh4dis3bjs" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/prcfjolbjdtclobkxhga" alt="">
+                        </div>
                         <div>
-                            <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Add Your Team Members</div>
+                            <div style="font-size: 16px; font-weight: bold;">Add Your Team Members</div>
                             <div class="description">Enhance your management efficiency by inviting your team members. Assign roles and manage bookings together for seamless
                             operations.</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                            <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ndivzezxsyztxkfwlxt9" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                            <div class="icon-container">
+                                <img class="icon-size" style="height: 10px" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/uzygusxfk5wqzela9rrg" alt="">
+                            </div>
                         <div>
-                            <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Invite Your Partners</div>
+                            <div style="font-size: 16px; font-weight: bold;">Invite Your Partners</div>
                             <div class="description">Extend collaboration by inviting your partners to book and utilize the rooms and amenities you offer.</div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                            <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/kelxi7kconqn8dgsnpnf" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 12px; height: 12px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/oa1h1emdwpnw0djam62d" alt="">
+                        </div>
                         <div>
-                            <div style="font-size: 16px; font-weight: bold; margin-top: 5px;">Manage Bookings</div>
+                            <div style="font-size: 16px; font-weight: bold;">Manage Bookings</div>
                             <div class="description">Use our intuitive dashboard to keep track of your bookings, check availability, and interact with bookers effortlessly.</div>
                         </div>
                     </div>
-                    <p class="thanks">Thank you for joining us at Migranium Spaces. We can&apos;t wait to see how your space transforms within our <br /> community.</p>
-                    <p class="thanks">Wishing you a productive and exciting journey!</p>
+                    <p class="thanks" style="margin: 30px 0px;">Thank you for joining us at Migranium Spaces. We can&apos;t wait to see how your space transforms within our <br /> community.</p>
+                
                     <div class="thanks">Tope</div>
                     <div class="thanks" style="margin-top: 3px;">Founder, Migranium</div>
                   
@@ -171,7 +211,7 @@
                     <span>support@migranium.com</span>.</p>
                 </div>
         </div>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px; margin-bottom: 20px;">
             <p class="footer">This email was sent to <span style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not receive this kind of email, Don’t want any more emails
             from Migranium? <br /> <span style="text-decoration: underline; color: #2969FF;">Unsubscribe.</span></p>
             <div style="font-size: 12px; font-weight: 'Manrope' sans-serif;">5000 Yonge St, Suite 1901, Toronto, Ontario, M2N 7E9</div>

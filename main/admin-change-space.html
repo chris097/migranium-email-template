@@ -25,11 +25,9 @@
             sans-serif;
         color: #121A26;
     }
-
     .logo {
         width: 30%;
     }
-
     .welcome-note {
         font-weight: 400;
         font-size: 16px;
@@ -37,20 +35,17 @@
         line-height: 1.5;
         margin-top: 20px;
     }
-
     .title {
         margin-top: 30px;
         font-weight: bold;
         font-size: 18px;
     }
-
     .thanks {
         font-size: 14px;
         font-weight: 400;
         line-height: 1.5;
         margin-top: 10px;
     }
-
     .support {
         margin-top: 10px;
         font-size: 14px;
@@ -58,18 +53,15 @@
         font-family: 'Inter', sans-serif;
         margin-top: 30px;
     }
-
     .check {
         font-size: 16px;
         font-weight: bold;
     }
-
     .check-good {
         width: 14px;
         height: 14px;
         margin-top: 3px;
     }
-
     .check-list {
         font-size: 14px;
         font-weight: 400;
@@ -77,23 +69,19 @@
         width: 500px;
         margin-top: 10px;
     }
-
     .support>span {
         text-decoration: underline;
         color: #005893;
         font-weight: 600;
     }
-
     .check {
         font-size: 16px;
         font-weight: bold;
     }
-
     .check-good {
         width: 22px;
         height: 22px;
     }
-
     .check-list {
         font-size: 14px;
         font-weight: 500;
@@ -101,17 +89,23 @@
         width: 550px;
         margin-top: 10px;
     }
-
     .banner {
-        width: 100%;
+    width: 100%;
         height: 151.25px;
         margin-top: 30px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         object-fit: fill;
-    }
+}
 
+.banner > img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+    background-size: auto;
+    overflow: hidden;
+}
     .button {
         background-color: #005893;
         padding: 20px;
@@ -124,30 +118,29 @@
         cursor: pointer;
         margin-top: 20px;
     }
-
     .button:hover {
         background-color: #014a7b;
     }
-
     .heading {
         font-size: 12px;
         font-weight: 400;
         line-height: 1.5;
     }
-
     .is-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 20px;
         max-width: 600px;
     }
-
     .footer {
         font-size: 14px;
         font-weight: 'Manrope' sans-serif;
     }
 
     @media (max-width: 600px) {
+        body{
+            max-width: 100%;
+        }
         .logo {
             width: 40%;
         }
@@ -155,7 +148,9 @@
         .welcome-note {
             font-size: 14px;
         }
-
+        .banner{
+            height: 115px;
+        }
         .check-list {
             width: 100%;
             font-size: 12px;
@@ -203,7 +198,7 @@
             <div style="display: flex; justify-content: flex-end;">
                 <img class="logo" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/mscqhnelowya5t73yng3" />
             </div>
-            <img class="banner" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/w3ohhyp0hpx6f6rcrbx2" />
+                <img class="banner" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/db3ikvrhgxmeisiclycf" />
             <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Hi,</h1>
             <p class="welcome-note">
                 We are reaching out to inform you that there has been a change to your booking. Originally, you booked [Original Space
@@ -219,17 +214,17 @@
                         <div class="heading">
                             Meeting Name
                         </div>
-                        <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
+                        <div class="description" style="margin-top: 0px;">Bohemian Woodwork</div>
                     </div>
                 </div>
-                <div class="is-grid">
+                <!-- <div class="is-grid"> -->
                     <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
                         <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/glxewijpxvdofshmnfun" alt="">
                         <div>
                             <div class="heading">
                                 Updated Space Name
                             </div>
-                            <div class="description" style="margin-top: 5px;">Bohemian Woodwork</div>
+                            <div class="description" style="margin-top: 0px;">Bohemian Woodwork</div>
                         </div>
                     </div>
                     <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
@@ -238,10 +233,10 @@
                             <div class="heading">
                                 Updated Space Location
                             </div>
-                            <div class="description" style="margin-top: 5px;">Floor 2</div>
+                            <div class="description" style="margin-top: 0px;">Floor 2</div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
                 <!-- <h2 class="title">Need to Change Your Plans?</h2> -->
                 <p class="thanks">We understand this may cause some inconvenience and are committed to ensuring a smooth
                     transition. Please feel free to

@@ -20,7 +20,7 @@
      body{
         max-width: 1000px;
          margin: 0 auto; 
-         padding: 20px; 
+         padding: 0 20px; 
          font-family: 'Helvetica Neue', 
          sans-serif; 
          color: #121A26;    
@@ -77,6 +77,23 @@
         font-size: 14px; 
         font-weight: 'Manrope' sans-serif;
     }
+    .icon-container {
+    width: 22px;
+    height: 22px;
+    background-color: #E8F3FB;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 22px;
+    min-height: 22px;
+    box-sizing: border-box;
+    margin-top: 1.5px;
+}
+.icon-size {
+    width: 12px;
+    height: 12px;
+}
      @media (max-width: 600px){
         .logo{
             width: 40%;
@@ -98,6 +115,16 @@
         .footer{
             font-size: 12px;
         }
+        .banner{
+            height: 115px;
+            margin: 20px auto;
+        }
+        .icon-container {
+        width: 22px; /* Ensure the width remains the same */
+        height: 22px; /* Ensure the height remains the same */
+        min-width: 22px;
+        min-height: 22px;
+        }
      }
 </style>
 
@@ -107,7 +134,7 @@
             <div style="display: flex; justify-content: flex-end;">
                 <img class="logo" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/mscqhnelowya5t73yng3" />
             </div>
-            <img class="banner" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/w3ohhyp0hpx6f6rcrbx2" />
+            <img class="banner" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/db3ikvrhgxmeisiclycf" />
             <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Hi,</h1>
             <p class="wecome-note">
             [Room Name] has been booked for an upcoming event at [Location Name].
@@ -117,8 +144,12 @@
                     <h2 class="title">Below are the details of the booking:</h2>
                 </div>
                 <div class="is-grid">
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/wgvar4kotnh9grnfclx2" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/wpdnxwwic9hsdk6kgigq"
+                                alt="">
+                        </div>
                         <div>
                             <div style="font-size: 12px;">Space Name</div>
                             <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
@@ -126,8 +157,11 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ydqfenlxxewywo90bicp" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size" style="width: 10px; height: 12px;"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/q9ffbgt8twt7pudxfqep" alt="">
+                        </div>
                         <div>
                             <div style="font-size: 12px;">Space Location</div>
                             <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
@@ -135,8 +169,11 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/ktlqo8xnzzwzdyqw7ar4" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/qptxn1tihtmf1ewefd0c" alt="">
+                        </div>
                         <div>
                             <div style="font-size: 12px;">Date</div>
                             <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
@@ -144,8 +181,11 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/sqxtody4wi1wkqhgbsvd" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/laospm49udochrtpxlzj" alt="">
+                        </div>
                         <div>
                             <div style="font-size: 12px;">Time</div>
                             <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
@@ -153,8 +193,11 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/mhl18tczrzyoeuechn5c" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/y4ulu3qgyweq2uim0scb" alt="">
+                        </div>
                         <div>
                             <div style="font-size: 12px;">Event Organizer</div>
                             <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
@@ -162,8 +205,11 @@
                             </div>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 30px;">
-                        <img style="width: 28px; height: 28px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/xmawmqwi9s7dopsrp2wr" alt="">
+                    <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
+                        <div class="icon-container">
+                            <img class="icon-size"
+                                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium-template/dy0tc0kwvzctlqgoe4ic" alt="">
+                        </div>
                         <div>
                             <div style="font-size: 12px;">Contact Information</div>
                             <div style="font-size: 15px; font-weight: 500; line-height: 1.5; margin-top: 5px;">
@@ -181,7 +227,7 @@
                     <span>support@migranium.com.</span></p>
             </div>
         </div>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px; margin-bottom: 20px;">
             <p class="footer">This email was sent to <span
                     style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
                 receive this kind of email, Don’t want any more emails
