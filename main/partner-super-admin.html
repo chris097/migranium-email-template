@@ -16,201 +16,113 @@
     <title>Onboarding</title>
 </head>
 
-<style>
-    body {
-        max-width: 1000px;
-        margin: 0 auto;
+<body
+    style="max-width: 1000px;
+        margin: -20px auto;
         padding: 0 20px;
         font-family: 'Helvetica Neue',
             sans-serif;
-        color: #121A26;
-    }
-
-    .logo {
-        width: 30%;
-    }
-
-    .welcome-note {
-        font-weight: 400;
-        font-size: 16px;
-        letter-spacing: 0.2;
-        line-height: 1.5;
-        margin-top: 20px;
-    }
-
-    .title {
-        margin-top: 30px;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    .thanks {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        margin-top: 10px;
-    }
-
-    .support {
-        margin-top: 10px;
-        font-size: 14px;
-        font-family: 'Inter', sans-serif;
-        margin-top: 20px;
-    }
-    .check{
-        font-size: 16px; 
-        font-weight: bold; 
-    }
-    .check-good{
-        width: 20px;
-        height: 20px;
-        margin-top: 2px;
-    }
-    .check-list{
-        font-size: 14px; 
-        font-weight: 400; 
-        line-height: 1.5;
-         width: 500px; 
-        margin-top: 5px;
-    }
-    .support>span {
-        text-decoration: underline;
-        color: #2969FF;
-    }
-
-    .banner {
-        width: 100%;
+        color: #121A26;">
+        <div>
+            <div style="display: flex; justify-content: flex-end; width: 100%;">
+                <img style="width: 161px; height: 51.51px;"
+                    src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/mscqhnelowya5t73yng3" />
+            </div>
+            <img style="width: 100%;
         height: 151.25px;
         margin-top: 30px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        object-fit: fill;
-    }
-
-    .button {
-        background-color: #005893;
-        padding: 20px;
-        color: #fff;
-        width: 100%;
-        border: none;
-        font-size: 16px;
-        font-weight: bold;
-        font-weight: 'Manrope' sans-serif;
-        cursor: pointer;
-        margin-top: 40px;
-    }
-
-    .button:hover {
-        background-color: #014a7b;
-    }
-
-    .footer {
-        font-size: 14px;
-        font-weight: 'Manrope' sans-serif;
-    }
-
-    @media (max-width: 600px) {
-        body{
-            max-width: 100%;
-            padding: 0 20px;
-            margin: -10px auto;
-        }
-        .logo {
-            width: 40%;
-        }
-
-        .welcome-note {
-            font-size: 14px;
-        }
-        .check-list{
-            width: 100%;
-            font-size: 12px;
-        }
-        .check-good{
-        width: 14px;
-        height: 14px;
-        margin-top: 3px;
-    }   
-        .title {
-            font-size: 16px;
-        }
-
-        .thanks {
-            font-size: 14px;
-        }
-
-        .support {
-            font-size: 12px;
-        }
-
-        .footer {
-            font-size: 12px;
-        }
-        .banner{
-            height: 115px;
-            margin: 20px auto;
-        }
-    }
-</style>
-
-<body>
-    <div style="display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-            <div style="display: flex; justify-content: flex-end;">
-                <img class="logo" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/mscqhnelowya5t73yng3" />
-            </div>
-            <img style="width: 100%; height: 151.25px; margin-top: 30px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/db3ikvrhgxmeisiclycf" />
+        object-fit: fill;"
+                src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/db3ikvrhgxmeisiclycf" />
             <h1 style="font-size: 24px; font-weight: bold; color: #121A26; margin-top: 20px;">Welcome! 🥳,</h1>
-            <p class="welcome-note">
-                We are excited to invite you to join [Organization Name] on Migranium Spaces 🎉.  This position allows you to book
-                premium spaces for various events and gives you the capability to manage user permissions within your organization.
+            <p style="font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.2;
+        line-height: 1.5;
+        margin-top: 20px;">
+                We are excited to invite you to join {{organization_name}} on Migranium Spaces 🎉. This position allows
+                you to book
+                premium spaces for various events and gives you the capability to manage user permissions within your
+                organization.
             </p>
             <div>
                 <div>
-                    <h2 class="title">Your Exclusive Super User Privileges:</h2>
+                    <h2 style="margin-top: 30px;
+        font-weight: bold;
+        font-size: 18px;">Your Exclusive Super User Privileges:</h2>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/s3pjdmpltu9ruiwla3hd" alt="">
+                    <img style="width: 20px;
+        height: 20px;
+        margin-top: 2px;"
+                        src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/s3pjdmpltu9ruiwla3hd"
+                        alt="">
                     <div>
-                        <div class="check">Booking Access</div>
-                        <div class="check-list">
+                        <div style="font-size: 16px;
+        font-weight: bold;">Booking Access</div>
+                        <div style="font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        width: 500px;
+        margin-top: 5px;">
                             Reserve any of our exclusive spaces for meetings, seminars, and special events.
                         </div>
                     </div>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 40px;">
-                    <img class="check-good" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/s3pjdmpltu9ruiwla3hd" alt="">
+                    <img style="width: 20px;
+        height: 20px;
+        margin-top: 2px;"
+                        src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/s3pjdmpltu9ruiwla3hd"
+                        alt="">
                     <div>
-                        <div class="check">User Management</div>
-                        <div class="check-list">
-                            Add members to your organization's account, granting them the ability to book spaces as needed.
+                        <div style="font-size: 16px;
+        font-weight: bold;">User Management</div>
+                        <div style="font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        width: 500px;
+        margin-top: 5px;">
+                            Add members to your organization's account, granting them the ability to book spaces as
+                            needed.
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h2 class="title">Get Started in Three Simple Steps:</h2>
+                    <h2 style="margin-top: 30px;
+        font-weight: bold;
+        font-size: 18px;">Get Started in Three Simple Steps:</h2>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
-                    <img style="width: 22px; height: 22px; margin-top: 1.5px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/y0dlorjwpwxbyukswrwj" alt="">
+                    <img style="width: 22px; height: 22px; margin-top: 1.5px;"
+                        src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/y0dlorjwpwxbyukswrwj"
+                        alt="">
                     <div>
                         <div style="font-size: 16px; font-weight: bold;">Log In to Your Dashboard</div>
                         <div style="font-size: 14px; font-weight: 400; line-height: 1.5;">
-                            Use your email to <span style="text-decoration: underline;">log in here</span> and access your Super User dashboard.
+                            Use your email to <a href="{{login_link}}"> <span style="text-decoration: underline;">log in
+                                    here</span></a> and access your Super User dashboard.
                         </div>
                     </div>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
-                    <img style="width: 22px; height: 22px; margin-top: 1.5px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/rfwgkrwwvbtvtcdrrzyq" alt="">
+                    <img style="width: 22px; height: 22px; margin-top: 1.5px;"
+                        src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/rfwgkrwwvbtvtcdrrzyq"
+                        alt="">
                     <div>
                         <div style="font-size: 16px; font-weight: bold;">Add Team Members</div>
                         <div style="font-size: 14px; font-weight: 400; line-height: 1.5;">
-                            Easily <span style="text-decoration: underline;">add users here</span>, enabling them to make bookings and manage details.
+                            Easily <a href="{{add_user_link}}"><span style="text-decoration: underline;">add users
+                                    here</span></a>, enabling them to make bookings and manage details.
                         </div>
                     </div>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: start; margin-bottom: 20px;">
-                    <img style="width: 22px; height: 22px; margin-top: 1.5px;" src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/nnalwnrp9fdad7mwvp97" alt="">
+                    <img style="width: 22px; height: 22px; margin-top: 1.5px;"
+                        src="https://res.cloudinary.com/dypexytkk/image/upload/f_auto,q_auto/v1/migranium/nnalwnrp9fdad7mwvp97"
+                        alt="">
                     <div>
                         <div style="font-size: 16px; font-weight: bold;">Explore Spaces</div>
                         <div style="font-size: 14px; font-weight: 400; line-height: 1.5;">
@@ -218,30 +130,45 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                <p class="thanks">Should you require any assistance or have any questions, please feel free to reach out to your dedicated account
-                manager, [Test_Customer's Name] ([Test_Customer's Email], or contact us at <span style="text-decoration: underline;">support@migranium.com</span>.</p>
-                <div class="thanks" style="margin-top: 30px;">Warm regards,</div>
-                <div class="thanks" style="margin-top: 3px;">The Migranium Team
-                </div>
-                <!-- get started button -->
-                <button class="button">View Account</button>
-                <p class="support">
-                    <b>Need assistance?</b> Our support team is here to help you every step of the way. You can reach us
-                    anytime at
-                    <span>support@migranium.com.</span>
-                </p>
             </div>
+            <p style="font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 10px;">Should you require any assistance or have any questions, please feel free to reach out to
+                your dedicated account
+                manager, {{staff_name}} ({{staff_email}}), or contact us at <span
+                    style="text-decoration: underline;">support@migranium.com</span>.</p>
+            <div style="font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 10px;" style="margin-top: 30px;">Warm regards,</div>
+            <div style="font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 10px;" style="margin-top: 3px;">The Migranium Team
+            </div>
+            <!-- get started button -->
+            <a href="view_account_link"><button style="background-color: #005893; padding: 20px; color: #fff; width: 100%; border: none; font-size: 16px; font-weight: bold; font-weight: 'Manrope' sans-serif; cursor: pointer; margin-top: 30px;">View Account</button></a>
+            <p style="margin-top: 10px;
+        font-size: 14px;
+        font-family: 'Inter', sans-serif;
+        margin-top: 20px;">
+                <b>Need assistance?</b> Our support team is here to help you every step of the way. You can reach us
+                anytime at
+                <span style="color: #005893; text-decoration: underline; font-weight: 500;">support@migranium.com.</span>
+            </p>
         </div>
-        <div style="margin-top: 100px; margin-bottom: 20px;">
-            <p class="footer">This email was sent to <span
-                    style="text-decoration: underline; color: #2969FF;">angel@notable.com.</span> If you'd rather not
-                receive this kind of email, Don’t want any more emails
-                from Migranium? <br /> <span style="text-decoration: underline; color: #2969FF;">Unsubscribe.</span></p>
-            <div style="font-size: 12px; font-weight: 'Manrope' sans-serif;">5000 Yonge St, Suite 1901, Toronto,
-                Ontario, M2N 7E9</div>
-            <div style="font-size: 12px; font-weight: 'Manrope' sans-serif;">© 2023 Migranium Platforms Inc</div>
-        </div>
+    </div>
+    <div style="margin-top: 100px; margin-bottom: 20px;">
+        <p style="font-size: 14px;
+        font-weight: 'Manrope' sans-serif;">This email was sent to <span
+                style="text-decoration: underline; color: #2969FF;">{{email}}.</span> If you'd rather not
+            receive this kind of email, Don’t want any more emails
+            from Migranium? <br /> <span style="text-decoration: underline; color: #2969FF;">Unsubscribe.</span></p>
+        <div style="font-size: 12px; font-weight: 'Manrope' sans-serif;">5000 Yonge St, Suite 1901, Toronto,
+            Ontario, M2N 7E9</div>
+        <div style="font-size: 12px; font-weight: 'Manrope' sans-serif;">© 2023 Migranium Platforms Inc</div>
+    </div>
     </div>
 </body>
 
